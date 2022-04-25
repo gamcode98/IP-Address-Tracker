@@ -7,7 +7,6 @@ body {
   font-family: "Rubik", sans-serif;
   /* Weights: 400, 500, 700; */
   margin: 0;
-  /* background-color: rosybrown; */
   background: url("./../assets/images/pattern-bg.png");
   background-repeat: no-repeat;
   background-size: 150% 50vh;
@@ -17,13 +16,13 @@ main {
 }
 .info-content,
 form {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 form {
   margin-top: 2rem;
-  margin-bottom: 9rem;
+  margin-bottom: 10rem;
 }
 .form-control {
   display: flex;
@@ -49,6 +48,7 @@ input {
   border-bottom-left-radius: 0.7rem;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 button {
   width: 15%;
@@ -58,6 +58,7 @@ button {
   outline: none;
   border-top-right-radius: 0.7rem;
   border-bottom-right-radius: 0.7rem;
+  cursor: pointer;
 }
 button img {
   max-width: 100%;
@@ -102,18 +103,43 @@ button img {
 .attribution a {
   color: var(--Gray);
 }
+dialog {
+  border: none;
+  border-radius: 0.7rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-dialog p {
+  text-align: center;
+}
+.btn-dialog {
+  display: block;
+  border-radius: 0.7rem;
+  color: var(--Gray);
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 #map {
-  z-index: -1;
+  z-index: -10;
   height: calc(100vh - 293px);
 }
 
+.ad-zone {
+  height: 0.1px;
+}
 @media screen and (min-width: 768px) {
   .info-content,
   form {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+  }
+  dialog {
+    width: 60%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -140,6 +166,9 @@ button img {
   }
   .info:last-child {
     border-right: none;
+  }
+  dialog {
+    width: 20%;
   }
   #map {
     height: calc(100vh - 229px);

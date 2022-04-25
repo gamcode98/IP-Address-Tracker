@@ -28,7 +28,7 @@
       <div class="form-control">
         <label for="ip-address">IP Address Tracker</label>
         <div class="input-submit">
-          <input name="ip" type="text" id="ip-address" placeholder="Search for any IP address or domain" required>
+          <input name="ip" type="text" id="ip-address" placeholder="Search for any IP address or domain">
           <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="submit"></button>
         </div>
       </div>
@@ -37,24 +37,23 @@
     <div class="info-content">
       <div class="info">
         <p>IP Address</p>
-        <p id="ip">23123213</p>
+        <p id="ip">Ups...</p>
       </div>
       <div class="info">
         <p>Location</p>
-        <p id="location">dasdasdsd</p>
+        <p id="location">Ups...</p>
       </div>
       <div class="info">
         <p>Timezone</p>
-        <p id="timezone">3213</p>
+        <p id="timezone">Ups...</p>
       </div>
       <div class="info">
         <p>ISP</p>
-        <p id="isp">sadads</p>
+        <p id="isp">Ups...</p>
       </div>
     </div>
-
-
     <div id="map"></div>
+
   </main>
   <!-- add offset value dynamically using the API -->
   <footer class="attribution">
@@ -62,18 +61,18 @@
     Coded by <a href="https://github.com/gamcode98" target="_blank">Gamcode</a>.
   </footer>
 
+  <dialog>
+    <div class="content-dialog"></div>
+    <button class="btn-dialog" id="close">Close</button>
+  </dialog>
+
+  <!-- To detect adblocker -->
+  <div class="ad-zone ad-space ad-unit textads banner-ads banner_ads">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./js/index.js" type="module"></script>
-  <!-- <script>
-    var map = L.map('map').setView([37.40599, -122.078514], 13);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoiZ2FiYWt0ZWNoIiwiYSI6ImNsMmNtdDY5eDAxeDkzYnJxNTRrNGNvdGYifQ.6GtRs6OgcCAFoP4wQCrRiQ'
-    }).addTo(map);
-  </script> -->
+
 </body>
 
 </html>
